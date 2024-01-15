@@ -22,5 +22,9 @@ export class AppService {
       'user_created',
       new CreateUserEvent(createUserRequest.email),
     );
+    this.analyticsClient.emit(
+      'user_created',
+      new CreateUserEvent(createUserRequest.email),
+    );
   }
 }
