@@ -9,6 +9,7 @@ export class AppService {
 
   constructor(
     @Inject('COMMUNICATION') private readonly communicationClient: ClientProxy,
+    @Inject('ANALYTICS') private readonly analyticsClient: ClientProxy,
   ) {}
 
   getHello(): string {
